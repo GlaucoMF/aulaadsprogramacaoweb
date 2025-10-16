@@ -12,39 +12,150 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro Voluntario</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="doar.html">Doar</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="somos">
             <h2>Quem somos</h2>
-            <p>Descrição sobre o assunto do titulo</p>
-            <img src="" alt="">
+            <p>A Vozes do Desenvolvimento é uma Organização Não Governamental (ONG) focada em Empreendedorismo Social em comunidades carentes. Nosso propósito central é atuar como um agente de transformação, fomentando a geração de renda e a autonomia econômica de indivíduos e famílias nessas comunidades. Acreditamos que o empreendedorismo é a chave para criar um futuro mais autônomo, resiliente e próspero.</p>
+            <img src="/aulaadsprogramacaoweb/img/folder.jpg" alt="">
         </section>
 
-        <section>
-            <h2>Missão</h2>
-            <p>Promover o empreendedorismo social em comunidades carentes para estimular a geração de renda, fortalecer habilidades e garantir a autonomia econômica dos indivíduos, contribuindo para o desenvolvimento sustentável e a melhoria da qualidade de vida.</p>
-            <img src="" alt="">
+        <section id="informacao">
+            <div class="missao">
+                <h2>Missão</h2>
+                <p>Promover o empreendedorismo social em comunidades carentes para estimular a geração de renda, fortalecer habilidades e garantir a autonomia econômica dos indivíduos, contribuindo para o desenvolvimento sustentável e a melhoria da qualidade de vida.</p>
+            </div>
+
+            <div class="visao">
+                <h2>Visão</h2>
+                <p>Ser referência nacional em desenvolvimento socioeconômico por meio do empreendedorismo social, criando comunidades autônomas, resilientes e prósperas, onde todos tenham oportunidades iguais para crescer e prosperar</p>
+            </div>
+
+            <div class="valores">
+                <h2>Valores</h2>
+                <p>Nossos princípios norteadores garantem a forma ética e eficaz com que realizamos nosso trabalho em campo:<br><br>•	Solidariedade: Atuamos com empatia e compromisso com as pessoas e comunidades.<br>•	Sustentabilidade: Priorizamos ações que promovam o equilíbrio social, econômico e ambiental.<br>•	Transparência: Mantemos clareza e responsabilidade em todas as nossas ações e recursos.<br>•	Inclusão: Valorizamos a diversidade e garantimos acessibilidade para todos.<br>•	Empoderamento: Incentivamos a autonomia e o protagonismo dos beneficiários.</p>
+            </div>
+
         </section>
 
-        <section>
-            <h2>Visão</h2>
-            <p>Ser referência nacional em desenvolvimento socioeconômico por meio do empreendedorismo social, criando comunidades autônomas, resilientes e prósperas, onde todos tenham oportunidades iguais para crescer e prosperar</p>
-            <img src="" alt="">
-        </section>
+        <section id="contato">
+            <div class="coluna-form">
+                <h3>Envie-nos uma Mensagem</h3>
+                <p>Tem dúvidas sobre nossos projetos, quer propor uma parceria ou precisa de informações? Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+        
+            <form action="processa-contato.php" method="POST">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
 
-        <section>
-            <h2>Valores</h2>
-            <p>•	Solidariedade: Atuamos com empatia e compromisso com as pessoas e comunidades.<br>•	Sustentabilidade: Priorizamos ações que promovam o equilíbrio social, econômico e ambiental.<br>•	Transparência: Mantemos clareza e responsabilidade em todas as nossas ações e recursos.<br>•	Inclusão: Valorizamos a diversidade e garantimos acessibilidade para todos.<br>•	Empoderamento: Incentivamos a autonomia e o protagonismo dos beneficiários.</p>
-            <img src="" alt="">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Escolha o Assunto</option>
+                        <option value="duvidas_gerais">Dúvidas Gerais</option>
+                        <option value="voluntariado">Quero ser Voluntário</option>
+                        <option value="parceria_empresa">Parceria Empresarial/Institucional</option>
+                        <option value="imprensa">Imprensa</option>
+                    </select>
+                </div>
+            
+                <div class="input-group">
+                    <label for="mensagem">Sua Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primario">Enviar Mensagem</button>
+            </form>
+
+            <div class="coluna-info">
+                <h3>Nossos Canais</h3>
+                
+                <div class="info-item">
+                    <i class="icone-email">📧</i>
+                    <h4>Email</h4>
+                    <p>contato@vozesdodesenvolvimento.org</p>
+                    <p>Para comunicação institucional e dúvidas gerais.</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="icone-telefone">📞</i>
+                    <h4>Telefone</h4>
+                    <p>(XX) XXXX-XXXX</p>
+                    <p>Atendimento de Segunda a Sexta, das 9h às 17h.</p>
+                </div>
+
+                <div class="cta-contato">
+                    <h4>Faça Parte desta Mudança</h4>
+                    <p>Sua contribuição é essencial para transformar vidas através do empreendedorismo social.</p>
+                    <a href="doar.html" class="btn-doar">
+                        <i class="icone-coracao">❤️</i> DOAR AGORA
+                    </a>
+                </div>
+        
+                <div class="info-item">
+                    <i class="icone-local">📍</i>
+                    <h4>Nosso Escritório</h4>
+                    <p>Rua da Autonomia, 123 - Bairro Esperança - Cidade/UF</p>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
 
     <footer>
+        <div class="container-footer">
+        
+            <div class="coluna logo-missao">
+                <h4>Vozes do Desenvolvimento</h4>
+                <p>ONG focada em Empreendedorismo Social para promover autonomia e gerar renda em comunidades carentes.</p>
+                <p>&copy; 2025 Vozes do Desenvolvimento. Todos os direitos reservados.</p>
+            </div>
 
+            <div class="coluna navegacao">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="projeto.html">Projeto</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="doar.html">Doar</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna engajamento">
+                <h4>Como Ajudar</h4>
+                <ul>
+                    <li><a href="doar.html" class="btn-doar">Faça uma Doação</a></li>
+                    <li><a href="cadastro.html">Seja Voluntário</a></li>
+                    <li><a href="parcerias.html">Seja nosso Parceiro</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna contato">
+                <h4>Fale Conosco</h4>
+                <p><strong>Email:</strong> contato@vozesdodesenvolvimento.org</p>
+                <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+                <p><strong>Endereço:</strong> Rua da Autonomia, 123 - Cidade/UF</p>
+                
+                <div class="redes-sociais">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
