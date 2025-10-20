@@ -1,0 +1,206 @@
+.btn-primario:hover, .btn-doar:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primario:focus, .btn-doar:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.btn-primario:active, .btn-doar:active {
+    transform: scale(0.98);
+}
+
+.btn-disabled {
+    background-color: var(--color-neutral-medium);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.btn-disabled:hover {
+    box-shadow: none;
+    filter: none;
+}
+
+.input-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+    color: var(--color-neutral-medium);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+header nav ul li a.active {
+    background-color: var(--color-primary-light);
+    font-weight: bold;
+}
+
+#hero-projetos {
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+#hero-projetos h2 {
+    font-size: var(--font-size-h1);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+#hero-projetos p {
+    font-size: var(--font-size-base);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#projetos-destaque {
+    padding: var(--spacing-xxl) 0;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+    margin-top: var(--spacing-xl);
+}
+
+.projeto-card {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding-bottom: var(--spacing-md);
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: var(--spacing-sm);
+}
+
+.projeto-card h4 {
+    font-size: var(--font-size-h3);
+    color: var(--color-primary);
+    padding: 0 var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+.projeto-card p {
+    font-size: var(--font-size-base);
+    color: var(--color-neutral-medium);
+    padding: 0 var(--spacing-md);
+}
+
+.bg-cinza {
+    background-color: var(--color-neutral-light);
+    padding: var(--spacing-xxl) 0;
+}
+
+.grid-ajuda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap);
+    align-items: center;
+}
+
+.col-voluntariado, .col-doacao {
+    padding: var(--spacing-lg);
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.col-doacao h3 {
+    color: var(--color-secondary);
+}
+
+.col-voluntariado h3 {
+    color: var(--color-accent);
+}
+
+.opcoes-doacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.btn-voluntario {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-accent);
+    margin-top: var(--spacing-sm);
+}
+
+#noticias-depoimentos {
+    text-align: center;
+    padding: var(--spacing-xxl) 0;
+}
+
+.subtitulo {
+    font-size: var(--font-size-h3);
+    color: var(--color-neutral-medium);
+    margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 1023px) {
+    .grid-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-ajuda {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    header nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-primary);
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header nav ul li {
+        border-bottom: 1px solid var(--color-primary-light);
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .grid-projetos {
+        grid-template-columns: 1fr;
+    }
+    
+    .opcoes-doacao {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    .opcoes-doacao a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

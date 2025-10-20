@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/doar.css">
 </head>
 <body>
     <header>
@@ -18,6 +22,56 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+
+        <section class="container">
+            <h1>Seu apoio impulsiona o Empreendedorismo Social!</h1>
+
+            <p class="impact-message">
+                Cada doação se transforma em **capacitação**, **microcrédito comunitário** ou **feiras de produtos locais**, promovendo **geração de renda e autonomia econômica** nas comunidades carentes.
+            </p>
+
+            <form class="donation-form" action="/processar-doacao" method="POST">
+                <h2>1. Escolha o valor da sua doação</h2>
+
+                <div class="donation-options">
+                    <button type="button" data-amount="35">R$ 35</button>
+                    <button type="button" data-amount="70">R$ 70</button>
+                    <button type="button" data-amount="100" class="selected">R$ 100</button>
+                    <button type="button" data-amount="150">R$ 150</button>
+                </div>
+
+                <label for="outros-valores">Ou defina outro valor (R$):</label>
+                <input type="number" id="outros-valores" name="valor_doacao" placeholder="Ex: 50" required min="10">
+
+                <label for="frequencia">2. Frequência da Doação</label>
+                <select id="frequencia" name="frequencia" required>
+                    <option value="unica">Doação Única</option>
+                    <option value="mensal">Doação Mensal (Recorrente)</option>
+                </select>
+
+                <h2>3. Seus Dados (Opcional)</h2>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome (para fins de relatório de Transparência)">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+                <div class="transparency">
+                    <p>Nós valorizamos a **Transparência**. Seu nome (se fornecido) poderá ser listado em nossos relatórios anuais de doadores (a menos que solicite anonimato).</p>
+                </div>
+
+            <button type="submit">Doar Agora e Transformar Vidas</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p>Quer ajudar de outra forma? Conheça também as opções de **Voluntariado** e **Parcerias Empresariais**.</p>
+            <a href="cadastro.html" style="display: inline-block; padding: 10px 20px; background-color: #006400; color: white; text-decoration: none; border-radius: 4px;">Quero ser Voluntário</a>
+        </div>
+    </section>
+
+    </main>
 
     <footer>
         <div class="container-footer">

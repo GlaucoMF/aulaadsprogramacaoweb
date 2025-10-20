@@ -1,0 +1,103 @@
+#cadastro-voluntarios {
+    max-width: 900px;
+    margin: var(--spacing-xxl) auto;
+    padding: var(--spacing-lg);
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro-voluntarios h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    border-radius: 6px;
+}
+
+legend {
+    font-size: var(--font-size-h3);
+    font-weight: bold;
+    color: var(--color-secondary);
+    padding: 0 var(--spacing-sm);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: var(--spacing-md) var(--spacing-lg);
+}
+
+section form label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+    color: var(--color-neutral-medium);
+}
+
+section form input[type="text"],
+section form input[type="email"],
+section form select {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+section form input:focus,
+section form select:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3); 
+    outline: none;
+}
+
+.campo-full {
+    grid-column: span 2; 
+}
+
+.btn-enviar {
+    grid-column: span 2; 
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-xl);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-enviar:hover {
+    background-color: #cc5200;
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    #cadastro-voluntarios {
+        margin: var(--spacing-xl) var(--spacing-sm);
+    }
+}
+
+@media (max-width: 580px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .campo-full, .btn-enviar {
+        grid-column: span 1; 
+    }
+}
