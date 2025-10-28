@@ -1,134 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vozes do Desenvolvimento</title>
-    <link rel="stylesheet" href="style/root.css">
-    <link rel="stylesheet" href="style/projeto.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style/root.css" />
+    <link rel="stylesheet" href="style/projeto.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Ong Vozes do Desenvolvimento</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="projeto.html" class="active">Projeto</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="doar.html">Doar</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1>Ong Vozes do Desenvolvimento</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="projeto.html" class="active">Projeto</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doar.html">Doar</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="hero-projetos" class="section-hero">
-            <div class="container">
-                <h2>Nossas Iniciativas: Empreendedorismo que Transforma Vidas</h2>
-                <p>Conheça o impacto real do nosso trabalho, os programas que fomentam a autonomia econômica e as comunidades que prosperam através do Empreendedorismo Social.</p>
+      <section id="hero-projetos" class="section-hero">
+        <div class="container">
+          <h2>Nossas Iniciativas: Empreendedorismo que Transforma Vidas</h2>
+          <p>
+            Conheça o impacto real do nosso trabalho, os programas que fomentam
+            a autonomia econômica e as comunidades que prosperam através do
+            Empreendedorismo Social.
+          </p>
+        </div>
+      </section>
+
+      <section id="projetos-destaque">
+        <div class="container">
+          <h3>Projetos Ativos</h3>
+          <div class="grid-projetos">
+            <article class="projeto-card">
+              <img
+                src="/aulaadsprogramacaoweb/img/artesanato.png"
+                alt="Pessoas trabalhando com artesanato"
+              />
+              <h4>Coletivo de Artesanato e Moda Sustentável</h4>
+              <p>
+                Organiza, capacita e conecta mulheres empreendedoras em técnicas
+                de design sustentável para promover uma fonte de renda estável e
+                justa.
+              </p>
+            </article>
+
+            <article class="projeto-card">
+              <img src="img/reuniao.png" alt="Pessoas em ofinina comunitaria" />
+              <h4>Incubadora Comunitária de Micro-Negócios</h4>
+              <p>
+                Oferecemos microcrédito e mentoria especializada em gestão,
+                finanças e marketing para o crescimento e formalização de
+                pequenos negócios locais.
+              </p>
+            </article>
+
+            <article class="projeto-card">
+              <img
+                src="img/informatica.png"
+                alt="Jovens em aula de informática"
+              />
+              <h4>Aceleração Digital e Inclusão Produtiva para Jovens</h4>
+              <p>
+                Prepara jovens para o mercado digital com cursos em e-commerce,
+                mídias sociais e habilidades de freelancer, incentivando o
+                protagonismo digital.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-ajudar" class="bg-cinza">
+        <div class="container grid-ajuda">
+          <div class="col-voluntariado">
+            <h3>Voluntariado: Compartilhe suas Vozes</h3>
+            <p>
+              Acreditamos na Solidariedade: suas habilidades são essenciais para
+              o empoderamento dos nossos empreendedores.
+            </p>
+            <a href="cadastro.html" class="btn-primario btn-voluntario"
+              >Seja Mentor ou Voluntário</a
+            >
+          </div>
+
+          <div class="col-doacao">
+            <h3>Doações: Invista na Autonomia</h3>
+            <p>
+              Sua contribuição é um investimento direto na geração de renda.
+              Escolha o impacto que você deseja causar:
+            </p>
+            <div class="opcoes-doacao">
+              <a href="doar.html?valor=50" class="btn-doar">R$ 50 (Material)</a>
+              <a href="doar.html?valor=150" class="btn-doar"
+                >R$ 150 (Mentoria)</a
+              >
+              <a href="doar.html?valor=500" class="btn-doar"
+                >R$ 500 (Microcrédito)</a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos-destaque">
-            <div class="container">
-                <h3>Projetos Ativos</h3>
-                <div class="grid-projetos">
-                    <article class="projeto-card">
-                        <img src="/aulaadsprogramacaoweb/img/artesanato.png" alt="Pessoas trabalhando com artesanato">
-                        <h4>Coletivo de Artesanato e Moda Sustentável</h4>
-                        <p>Organiza, capacita e conecta mulheres empreendedoras em técnicas de design sustentável para promover uma fonte de renda estável e justa.</p>
-                    </article>
-
-                    <article class="projeto-card">
-                        <img src="img/reuniao.png" alt="Pessoas em ofinina comunitaria">
-                        <h4>Incubadora Comunitária de Micro-Negócios</h4>
-                        <p>Oferecemos microcrédito e mentoria especializada em gestão, finanças e marketing para o crescimento e formalização de pequenos negócios locais.</p>
-                    </article>
-
-                    <article class="projeto-card">
-                        <img src="img/informatica.png" alt="Jovens em aula de informática">
-                        <h4>Aceleração Digital e Inclusão Produtiva para Jovens</h4>
-                        <p>Prepara jovens para o mercado digital com cursos em e-commerce, mídias sociais e habilidades de freelancer, incentivando o protagonismo digital.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="como-ajudar" class="bg-cinza">
-            <div class="container grid-ajuda">
-                <div class="col-voluntariado">
-                    <h3>Voluntariado: Compartilhe suas Vozes</h3>
-                    <p>Acreditamos na Solidariedade: suas habilidades são essenciais para o empoderamento dos nossos empreendedores.</p>
-                    <a href="cadastro.html" class="btn-primario btn-voluntario">Seja Mentor ou Voluntário</a>
-                </div>
-
-                <div class="col-doacao">
-                    <h3>Doações: Invista na Autonomia</h3>
-                    <p>Sua contribuição é um investimento direto na geração de renda. Escolha o impacto que você deseja causar:</p>
-                    <div class="opcoes-doacao">
-                        <a href="doar.html?valor=50" class="btn-doar">R$ 50 (Material)</a>
-                        <a href="doar.html?valor=150" class="btn-doar">R$ 150 (Mentoria)</a>
-                        <a href="doar.html?valor=500" class="btn-doar">R$ 500 (Microcrédito)</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="noticias-depoimentos">
-            <div class="container">
-                <h3>Acompanhe Nossas Vozes</h3>
-                <p class="subtitulo">Leia histórias reais de impacto e nossos relatórios de transparência.</p>
-                <a href="#" class="btn-primario">Acessar Notícias e Eventos</a>
-            </div>
-        </section>
+      <section id="noticias-depoimentos">
+        <div class="container">
+          <h3>Acompanhe Nossas Vozes</h3>
+          <p class="subtitulo">
+            Leia histórias reais de impacto e nossos relatórios de
+            transparência.
+          </p>
+          <a href="#" class="btn-primario">Acessar Notícias e Eventos</a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container-footer">
-            <div class="coluna logo-missao">
-                <h4>Vozes do Desenvolvimento</h4>
-                <p>ONG focada em Empreendedorismo Social para promover autonomia e gerar renda em comunidades carentes.</p>
-                <p>&copy; 2025 Vozes do Desenvolvimento. Todos os direitos reservados.</p>
-            </div>
-
-            <div class="coluna navegacao">
-                <h4>Navegação</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="projeto.html">Projeto</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="doar.html">Doar</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                </ul>
-            </div>
-
-            <div class="coluna engajamento">
-                <h4>Como Ajudar</h4>
-                <ul>
-                    <li><a href="doar.html" class="btn-doar">Faça uma Doação</a></li>
-                    <li><a href="cadastro.html">Seja Voluntário</a></li>
-                    <li><a href="parceiros.html">Seja nosso Parceiro</a></li>
-                </ul>
-            </div>
-
-            <div class="coluna contato">
-                <h4>Fale Conosco</h4>
-                <p><strong>Email:</strong> contato@vozesdodesenvolvimento.org</p>
-                <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
-                <p><strong>Endereço:</strong> Rua da Autonomia, 123 - Cidade/UF</p>
-                
-                <div class="redes-sociais">
-                    <a href="#" target="_blank">Facebook</a>
-                    <a href="#" target="_blank">Instagram</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                </div>
-            </div>
+      <div class="container-footer">
+        <div class="coluna logo-missao">
+          <h4>Vozes do Desenvolvimento</h4>
+          <p>
+            ONG focada em Empreendedorismo Social para promover autonomia e
+            gerar renda em comunidades carentes.
+          </p>
+          <p>
+            &copy; 2025 Vozes do Desenvolvimento. Todos os direitos reservados.
+          </p>
         </div>
+
+        <div class="coluna navegacao">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="projeto.html">Projeto</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doar.html">Doar</a></li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="coluna engajamento">
+          <h4>Como Ajudar</h4>
+          <ul>
+            <li><a href="doar.html" class="btn-doar">Faça uma Doação</a></li>
+            <li><a href="cadastro.html">Seja Voluntário</a></li>
+            <li><a href="parceiros.html">Seja nosso Parceiro</a></li>
+          </ul>
+        </div>
+
+        <div class="coluna contato">
+          <h4>Fale Conosco</h4>
+          <p><strong>Email:</strong> contato@vozesdodesenvolvimento.org</p>
+          <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+          <p><strong>Endereço:</strong> Rua da Autonomia, 123 - Cidade/UF</p>
+
+          <div class="redes-sociais">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
