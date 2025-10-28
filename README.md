@@ -98,4 +98,4 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 ## ✉️ Contato
 
 ONG Vozes do Desenvolvimento - `contato@vozesdodesenvolvimento.org`
-[Link para o Projeto no GitHub]([https://github.com/GlaucoMF/aulaadsprogramacaoweb.git])
+[Link para o Projeto no GitHub](https://github.com/GlaucoMF/aulaadsprogramacaoweb.git)
